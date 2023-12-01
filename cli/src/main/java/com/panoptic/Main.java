@@ -65,8 +65,8 @@ public class Main{
                     continue;
 
                 default:
-                  if(input.toLowerCase().matches("(?i)add\\s+@@\"[^\"@@]+\"@@")){
-                    NewSnippet.main(new String[]{input});
+                if (input.toLowerCase().matches("(?i)add\\s+#\\w+\\s+@@\"[^\"@@]+\"@@")) {
+                  NewSnippet.main(new String[]{input});
                   }
                   else{
                     System.out.println("(!) ** Invalid command ** : "+input+"\n");

@@ -1,0 +1,5 @@
+The Panoptic Pen's Code Snippet Manager is an OS-independent CLI application developed by Yunus Emre Vurgun (yunusemrevurgun.com) in November 2023.
+The application helps manage code snippets in a structured order for developers to categorize their functions, variables and more.
+The application has been programmed in Java, therefore requires you to have JDK installed on your machine.
+
+-Yunus

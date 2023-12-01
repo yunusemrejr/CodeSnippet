@@ -1,10 +1,11 @@
 package com.panoptic;
 
+import java.io.IOException;
 import java.util.Scanner;
 import java.util.regex.*;
 
 public class Main{
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException{
         
         System.out.println("\nWelcome to The Panoptic Pen Code Snipper Manager / www.panopticpen.space / v.1.0.0 by Yunus Emre Vurgun - Nov. 2023\n");
         System.out.println("*********************************\n");
@@ -15,7 +16,7 @@ public class Main{
 }
 
 
-    public static  void runScannerListening(){     
+    public static  void runScannerListening() throws IOException{     
                 Scanner scanner = new Scanner(System.in);
 
         while(true){

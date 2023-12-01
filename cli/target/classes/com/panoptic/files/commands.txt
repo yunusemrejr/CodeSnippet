@@ -1,0 +1,20 @@
+**********
+
+LIST OF COMMANDS:
+
+INFO - shows information about the app
+COMMANDS - shows a list of commands
+ADD - adds a new code snippet
+DELETE - deletes a code snippet
+CLONE - clones a code snippet
+EXIT - exits the application.
+
+-------
+Example Usage:
+
+Example 1: INFO
+Example 2: ADD @@"function(){print('hey sudo code')}"@@  //adds a code block as new snippet, write between @@" .....here.... "@@ as syntax.
+Example 3: DELETE 5 //deletes 5th code snippet element from data file
+Example 4: CLONE 3  //clones 3rd element / creates a copy
+Example 5: LISTALL  //lists all current snippets
+**********

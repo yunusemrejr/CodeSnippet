@@ -13,8 +13,10 @@ EXIT - exits the application.
 Example Usage:
 
 Example 1: INFO
-Example 2: ADD @@"function(){print('hey sudo code')}"@@  //adds a code block as new snippet, write between @@" .....here.... "@@ as syntax.
-Example 3: DELETE 5 //deletes 5th code snippet element from data file
-Example 4: CLONE 3  //clones 3rd element / creates a copy
+Example 2: ADD #name_of_snippet @@"function(){print('hey sudo code')}"@@  //adds a code block as new snippet, write between @@" .....here.... "@@ as syntax.
+Example 3: DELETE #name_of_snippet //deletes name_of_snippet code snippet element from data file
+Example 4: CLONE #name_of_snippet AS #copy_snippet  //clones name_of_snippet element / creates a copy
 Example 5: LISTALL  //lists all current snippets
+Example 6: VIEW #snippet123  //shows the snippet
+
 **********

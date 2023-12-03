@@ -1,11 +1,1 @@
-[
-    {
-      "snippetID": "default1",
-      "snippet": "This is the default snippet 1."
-    },
-    {
-      "snippetID": "default2",
-      "snippet": "This is the default snippet 2."
-    }
-  ]
-  
+[{"snippetID":"default1","snippet":"This is the default snippet 1."},{"snippetID":"default2","snippet":"This is the default snippet 2."}]

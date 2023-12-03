@@ -2,7 +2,6 @@ package com.panoptic;
 
 import java.io.IOException;
 import java.util.Scanner;
-import java.util.regex.*;
 
 public class Main{
     public static void main(String[] args) throws IOException{
@@ -33,12 +32,12 @@ public class Main{
 
                 case "info":
                     System.out.println("Your entered: "+input+"\n");
-                    ReadTxt.main(new String[]{"about.txt"});
+                    ReadTxt.main(new String[]{"cli/src/main/java/com/panoptic/files/about.txt"});
                     continue;
 
                 case "commands":
                 System.out.println("Your entered: "+input+"\n");
-                     ReadTxt.main(new String[]{"commands.txt"});
+                     ReadTxt.main(new String[]{"cli/src/main/java/com/panoptic/files/commands.txt"});
                     continue;
 
                 case "add":
@@ -47,17 +46,7 @@ public class Main{
                     
                     continue;
 
-                case "delete":
-                System.out.println("Your entered: "+input+"\n");
-                     
-                      DeleteSnippet.main(new String[]{});
-                    continue;
-
-                case "clone":
-                System.out.println("Your entered: "+input+"\n");
-                  CloneSnippet.main(new String[]{});
-
-                    continue;
+         
 
                 case "listall":
                 System.out.println("Your entered: "+input+"\n");
@@ -69,6 +58,17 @@ public class Main{
                 if (input.toLowerCase().matches("(?i)add\\s+#\\w+\\s+@@\"[^\"@@]+\"@@")) {
                   NewSnippet.main(new String[]{input});
                   }
+                  else if(input.toLowerCase().matches("(?i)delete\\s+#\\w+")){
+                   DeleteSnippet.main(new String[]{input.toLowerCase()});
+                  }
+                  else if(input.toLowerCase().matches("(?i)view\\s+#\\w+")){
+                   ViewSnippet.main(new String[]{input.toLowerCase()});
+                  }
+                  else if (input.toLowerCase().matches("(?i)clone\\s+#\\w+\\s+as\\s+#\\w+")) {
+                    CloneSnippet.main(input.toLowerCase().split("\\s+"));
+                }
+                
+                
                   else{
                     System.out.println("(!) ** Invalid command ** : "+input+"\n");
                   }
